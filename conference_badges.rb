@@ -24,3 +24,5 @@ def assign_rooms(attendees)
   puts 
   new_array
 end
+
+def 
