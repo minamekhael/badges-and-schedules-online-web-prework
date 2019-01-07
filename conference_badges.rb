@@ -15,15 +15,11 @@ def batch_badge_creator(attendees)
 end
 
 def assign_rooms(attendees)
-  new_array = []
-  counter = 1
-  attendees.each do |name|
-    new_array.push("Hello, #{name}! You'll be assigned to room #{counter}!")
-    counter += 1
+  room=0
+  attendees.collect do |name|
+    room+=1
+    "Hello, #{name}! You'll be assigned to room #{room}!"
   end
-  puts 
-  new_array
-end
 
 def printer(attendees)
  batch_badge_creator.each do |value|
