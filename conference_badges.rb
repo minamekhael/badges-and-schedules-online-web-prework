@@ -10,5 +10,5 @@ def batch_badge_creator(attendees)
   array.each do |name|
     nuarray.push("Hello, my name is #{name}.")
   end
-  print newarray
+  puts newarray
 end
